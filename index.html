@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#191a18">
+  <meta name="description" content="BUILDFIT — durable, comfortable, professional workwear for the people who build our world.">
+  <title>BUILDFIT — Built for Real Work</title>
+  <style>
+    :root{--ink:#191a18;--paper:#f5f4ef;--accent:#ffbd39;--muted:#73756f;--line:#ddddd5}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:95px}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif}a{color:inherit;text-decoration:none}button{font:inherit}a,button{-webkit-tap-highlight-color:transparent}a:focus-visible,button:focus-visible{outline:3px solid #e99416;outline-offset:5px}.wrap{width:min(1320px,calc(100% - 96px));margin:auto}.eyebrow{font-size:11px;font-weight:800;letter-spacing:2px;text-transform:uppercase}.logo{font-size:28px;letter-spacing:-1.5px;font-weight:900;display:inline-flex;align-items:center;gap:9px}.logo-mark{width:23px;height:27px;background:var(--accent);clip-path:polygon(0 0,100% 0,100% 40%,64% 40%,64% 59%,100% 59%,100% 100%,0 100%,0 60%,35% 60%,35% 40%,0 40%)}
+    header{background:var(--ink);color:white;position:sticky;top:0;z-index:10;border-bottom:1px solid #ffffff18}.nav{height:88px;display:flex;align-items:center;justify-content:space-between;gap:30px}.nav-links{display:flex;align-items:center;gap:32px;font-size:12px;font-weight:700}.nav-links a{padding:10px 0}.nav-links a:hover,.nav-links .active{color:var(--accent)}.nav-note{font-size:10px;color:#b4b6ae;letter-spacing:1.4px}.menu-toggle{display:none;background:none;border:1px solid #666;color:white;padding:10px 14px;cursor:pointer}
+    .hero{background:var(--ink);color:white;position:relative;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.04fr 1fr;min-height:615px;align-items:center}.hero-copy{padding:65px 0 80px;position:relative;z-index:2}.hero .eyebrow{color:var(--accent);display:flex;align-items:center;gap:12px}.hero .eyebrow:before{content:'';width:28px;height:2px;background:var(--accent)}h1{font-size:clamp(56px,6.6vw,96px);font-weight:900;letter-spacing:-5px;line-height:.96;margin:30px 0 24px}h1 span{color:var(--accent)}.subtitle{font-size:19px;line-height:1.6;color:#d3d4cd;margin:0 0 12px}.hero-description{max-width:345px;font-size:13px;color:#92968c;line-height:1.8}.actions{display:flex;gap:12px;margin-top:33px}.button{display:inline-flex;align-items:center;justify-content:center;gap:30px;padding:18px 23px;font-size:12px;font-weight:800;background:var(--accent);color:var(--ink);border:1px solid var(--accent);transition:background .2s,transform .2s}.button:hover{background:#ffd173;transform:translateY(-2px)}.button.secondary{background:transparent;color:white;border-color:#686b61}.button.secondary:hover{background:#ffffff12}.hero-footnote{display:flex;gap:10px;align-items:center;font-size:10px;letter-spacing:1px;color:#abaea4;margin-top:38px}.hero-footnote span{color:var(--accent)}
+    .hero-art{height:100%;position:relative;display:grid;place-items:center;background:radial-gradient(ellipse at 55% 50%,#45483d 0,transparent 65%)}.hero-art:before{content:'BF';position:absolute;font-size:clamp(220px,30vw,440px);font-weight:900;letter-spacing:-35px;color:#ffffff04;transform:rotate(-8deg)}.hero-art>svg{width:110%;height:540px;position:relative;filter:drop-shadow(0 30px 25px #0007);transform:rotate(-7deg)}.edition{position:absolute;top:48px;right:0;border:1px solid #777a68;padding:10px 12px;color:#c7cabb;font-size:9px;letter-spacing:2px}.product-label{position:absolute;bottom:57px;right:0;font-size:10px;letter-spacing:1.2px;line-height:1.8;text-align:right}.product-label strong{display:block;color:var(--accent);font-size:11px}.art-caption{position:absolute;left:15px;bottom:58px;color:#838878;font-size:9px;letter-spacing:2px;writing-mode:vertical-rl}
+    .benefits{border-bottom:1px solid var(--line);background:#eeeee6}.benefits-inner{display:grid;grid-template-columns:repeat(3,1fr);padding:24px 0}.benefit{display:flex;align-items:center;justify-content:center;gap:13px;font-size:10px;font-weight:800;letter-spacing:1.3px}.benefit+.benefit{border-left:1px solid #d5d6cd}.benefit svg{width:21px;height:21px;fill:none;stroke:currentColor;stroke-width:1.5}
+    .categories{padding:76px 0 85px}.section-heading{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:32px}.section-heading .eyebrow{color:#898b80}h2{font-size:36px;letter-spacing:-1.4px;margin:12px 0 0;line-height:1.15}.text-link{font-size:11px;font-weight:800;display:flex;gap:25px;align-items:center;border-bottom:1px solid var(--ink);padding:0 0 8px}.category-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}.category{display:block;min-width:0}.category-image{height:230px;background:#e9e9e1;position:relative;display:grid;place-items:center;overflow:hidden;transition:background .2s}.category:hover .category-image{background:#e0e1d5}.category-image svg{width:88%;height:80%;filter:drop-shadow(0 10px 6px #0002);transition:transform .25s}.category:hover svg{transform:translateY(-5px)}.category-number{position:absolute;top:15px;left:15px;font-size:9px;color:#828578}.category-title{display:flex;justify-content:space-between;align-items:center;padding:19px 0 9px;font-size:14px;font-weight:800}.category-title span{font-size:18px;font-weight:400}.category small{color:var(--muted);font-size:11px}
+    .mission{background:var(--ink);color:white;overflow:hidden}.mission-grid{display:grid;grid-template-columns:1fr 1.08fr;gap:90px;align-items:center;padding-top:75px;padding-bottom:75px}.mission .eyebrow{color:var(--accent)}.mission h2{font-size:clamp(36px,4.2vw,58px);letter-spacing:-2px;margin:22px 0;max-width:430px}.mission h2 span{color:var(--accent)}.mission p{font-size:14px;line-height:1.9;color:#a9ada2;max-width:440px}.mission .text-link{display:inline-flex;color:white;border-color:#686b61;margin-top:15px}.mission-graphic{position:relative;min-height:300px;background:#242720;display:flex;flex-direction:column;justify-content:center;padding:44px;border-left:4px solid var(--accent)}.mission-graphic:after{content:'+';position:absolute;right:25px;top:15px;color:#858b78;font-size:30px;font-weight:200}.mission-graphic strong{font-size:clamp(36px,4vw,58px);font-weight:900;line-height:1.05;letter-spacing:-2px}.mission-graphic strong span{color:var(--accent)}.mission-graphic small{color:#929987;letter-spacing:2px;font-size:9px;margin-top:30px}.team-strip{padding:40px 0;display:flex;align-items:center;justify-content:space-between;gap:24px}.team-strip h2{font-size:25px;margin:0 0 8px}.team-strip p{font-size:12px;color:var(--muted);margin:0}.team-strip .button{white-space:nowrap}footer{border-top:1px solid var(--line)}.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:29px 0}footer .logo{font-size:21px}footer .logo-mark{width:17px;height:20px}footer p,footer>a{font-size:10px;color:var(--muted)}.footer-contact{font-size:11px;border-bottom:1px solid #999;padding-bottom:3px}.skip{position:fixed;top:-60px;left:10px;z-index:100;background:var(--accent);padding:12px}.skip:focus{top:10px}.svg-library{position:absolute;width:0;height:0;overflow:hidden}
+    @media(min-width:1500px){.hero-grid{min-height:690px}.hero-art>svg{height:610px}}
+    @media(max-width:1000px){.wrap{width:calc(100% - 48px)}.nav-note{display:none}.hero-grid{min-height:550px}h1{letter-spacing:-3px}.hero-art>svg{height:440px}.category-grid{gap:10px}.category-image{height:190px}.mission-grid{gap:40px}.button{gap:16px;padding:16px 18px}}
+    @media(max-width:700px){.wrap{width:calc(100% - 36px)}.nav{height:72px;flex-wrap:wrap;gap:0}.logo{font-size:25px}.menu-toggle{display:block}.nav-links{display:none;position:absolute;top:72px;left:0;right:0;background:var(--ink);padding:16px 24px 24px;border-bottom:1px solid #555;flex-direction:column;align-items:stretch;gap:5px}.nav-links.open{display:flex}.hero-grid{grid-template-columns:1fr}.hero-copy{padding:50px 0 20px}h1{font-size:clamp(58px,13vw,88px)}.subtitle{font-size:17px}.hero-description{max-width:390px}.hero-art{height:360px}.hero-art>svg{height:365px;width:100%;max-width:450px}.edition{top:20px}.product-label{bottom:25px}.art-caption{bottom:25px}.hero-footnote{margin-top:26px}.benefits-inner{padding:20px 0;gap:10px}.benefit{flex-direction:column;text-align:center;font-size:8px;line-height:1.5;letter-spacing:.7px;padding:0 5px}.categories{padding:48px 0}.section-heading{align-items:start}.section-heading h2{font-size:29px}.section-heading .text-link{font-size:10px;gap:8px;margin-top:30px}.category-grid{grid-template-columns:repeat(2,1fr);gap:25px 14px}.category-image{height:220px}.category:last-child{grid-column:1 / -1}.category:last-child .category-image{height:200px}.category:last-child svg{max-width:240px}.mission-grid{grid-template-columns:1fr;gap:32px;padding-top:48px;padding-bottom:48px}.mission h2{max-width:350px}.mission-graphic{min-height:260px}.team-strip{align-items:start;flex-direction:column}.footer-inner{flex-wrap:wrap}.footer-inner p{order:3;flex-basis:100%;margin:0}.actions{gap:10px}.button{font-size:11px}.hero .eyebrow{font-size:9px}.category-title{padding-top:13px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+  .header-cart{display:inline-flex;align-items:center;gap:8px;color:var(--accent);font-size:12px;font-weight:800;white-space:nowrap}.header-cart svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.7}.header-cart [data-cart-count]{background:var(--accent);color:var(--ink);border-radius:20px;min-width:22px;padding:4px;text-align:center}.nav .nav-note{display:none}@media(max-width:700px){.nav .menu-toggle{margin-left:auto;margin-right:15px}.header-cart{gap:5px;font-size:11px}.header-cart svg{display:none}.nav .logo{font-size:23px;gap:5px}.nav .menu-toggle{padding:9px}}
+.header-cart{cursor:pointer;pointer-events:auto}.header-cart *{pointer-events:none}
+</style>
+</head>
+<body>
+  <svg class="svg-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <defs>
+      <linearGradient id="fabric" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#c2a66e"/><stop offset=".5" stop-color="#a18551"/><stop offset="1" stop-color="#766038"/></linearGradient>
+      <linearGradient id="black" x1="0" x2="1" y2="1"><stop stop-color="#494b43"/><stop offset="1" stop-color="#20231e"/></linearGradient>
+      <symbol id="jacket" viewBox="0 0 400 440">
+        <path d="M142 61 174 44 224 44 257 61 307 79 326 115 372 295 328 316 292 215 290 386 Q199 406 109 386L108 213 72 316 28 295 73 115 94 80Z" fill="url(#fabric)" stroke="#645235" stroke-width="2"/>
+        <path d="m143 61 31-17 50 0 33 17-20 44-38-27-37 27Z" fill="#34372f"/><path d="m174 44 25 34 25-34" fill="#151913"/>
+        <path d="m94 80 49-19 19 44-45 15-17 72-41-12 14-65Z M257 61l50 18 19 36 15 65-42 12-16-72-46-15Z" fill="#3c4035"/>
+        <path d="M199 79v311" stroke="#383a2d" stroke-width="8"/><path d="M198 90v292" stroke="#cfb985" stroke-width="2" stroke-dasharray="2 3"/><path d="M204 108v16" stroke="#e0d9bc" stroke-width="4"/>
+        <path d="M123 146h57v64l-28 7-29-7Z M220 146h55v64l-27 7-28-7Z" fill="#927747" stroke="#d0b67c" stroke-width="1.2"/><path d="M122 145h59v18h-59Z M219 145h57v18h-57Z" fill="#ac915b"/>
+        <path d="m121 268 58-13v81l-58 12Z M219 255l57 13v80l-57-12Z" fill="#3a3e32"/><path d="m131 280 38-9 M229 271l37 9" stroke="#171c13" stroke-width="5"/>
+        <path d="m37 272 43 18-8 26-44-21Z M320 290l43-18 9 23-44 21Z M109 369q90 16 181 0v17q-91 20-181 0Z" fill="#34392d"/>
+        <path d="M116 121v238 M283 121v238 M87 121l-38 143 M313 121l38 143" fill="none" stroke="#d1b47a" stroke-width="1" stroke-dasharray="4 3"/>
+        <rect x="229" y="177" width="36" height="13" rx="1" fill="#ffbd39"/><text x="247" y="186" text-anchor="middle" font-family="Arial" font-size="6" font-weight="900" fill="#252920">BUILDFIT</text>
+      </symbol>
+      <symbol id="trousers" viewBox="0 0 240 300"><path d="M64 22h113l9 85 23 174-69 5-24-160-11 160-68-5 20-174Z" fill="url(#black)" stroke="#24271f" stroke-width="2"/><path d="M65 32h110 M118 36v61l-15 13 M68 42l-5 38 29-22 M169 42l9 38-29-22" fill="none" stroke="#7a7c6c" stroke-width="2"/><path d="M49 137h48v50H44Z M141 137h48l7 50h-49Z" fill="#585a4c"/><path d="M45 206h57v37H41Z M150 206h49l5 37h-49Z" fill="#171c15"/><path d="M68 22v16 M91 22v16 M147 22v16 M169 22v16" stroke="#969584" stroke-width="5"/><path d="M151 146h28v7h-28Z" fill="#ffbd39"/></symbol>
+      <symbol id="vest" viewBox="0 0 240 300"><path d="m77 32 25-10h36l25 10 8 64 35 27-12 144H47L34 123l35-27Z" fill="#f1bb29" stroke="#c5981d" stroke-width="2"/><path d="m102 22 18 44 18-44-2 94h-32Z" fill="#34382e"/><path d="M117 65h6v202h-6Z" fill="#2a3025"/><path d="m79 37 17-7 9 131H84Z M144 30l17 7-5 124h-21Z M40 161h158l-3 24H42Z M44 211h151l-2 23H46Z" fill="#dce0d1"/><path d="M56 112h44v32H56Z M140 112h43v32h-43Z" fill="#d5a421"/><path d="M57 242h43v19H57Z M140 242h40v19h-40Z" fill="#373c30"/></symbol>
+      <symbol id="boot" viewBox="0 0 260 240"><path d="m79 43 78 2 7 85 60 28q24 14 18 45H29l-2-36 35-33Z" fill="url(#fabric)" stroke="#6f5a37" stroke-width="3"/><path d="m82 43 71 1 2 28-78-1Z" fill="#37392e"/><path d="m65 118 43-17 40 44-32 41H33l-4-19Z" fill="#9a7b47"/><path d="m146 145 18-15 60 28q24 14 18 30h-99Z" fill="#46483b"/><path d="M27 187h218v26H26Z" fill="#252b21"/><path d="M36 209v11m25-11v11m25-11v11m25-11v11m25-11v11m25-11v11m25-11v11m25-11v11m25-11v11" stroke="#252b21" stroke-width="12"/><path d="m119 78 31 4m-30 12 31 4m-27 12 28 4m-24 12 27 4" stroke="#272d21" stroke-width="5"/><path d="M50 174h50l22-26" fill="none" stroke="#d0b780" stroke-width="2"/><rect x="78" y="87" width="22" height="10" fill="#ffbd39"/></symbol>
+      <symbol id="accessories" viewBox="0 0 260 250"><path d="m40 107 5-55q2-12 11-5l10 39 2-58q3-13 12-3l6 60 5-65q5-12 12 0l3 64 10-52q7-10 13 2l-1 83 20-28q15-12 18 3l-20 64-23 34-3 40H56l-3-47-22-40q-9-23 9-36Z" fill="#4c5143" stroke="#292f25" stroke-width="2"/><path d="m62 106 58-4 4 55-18 27H64Z" fill="#222a20"/><path d="M53 193h69v35H56Z" fill="#a68c56"/><path d="m158 108 30-40q10-7 13 5l-15 31 34-36q11-4 11 8l-32 42 32-28q13-3 9 10l-30 38 21-13q13 0 6 12l-43 48-7 28-43-29 8-34-9-30q-4-21 15-12Z" fill="#6c715e" stroke="#30372a" stroke-width="2"/><path d="m143 180 47 29-16 24-47-30Z" fill="#ab9058"/><path d="M71 204h33v10H71Z" fill="#ffbd39"/></symbol>
+    </defs>
+  </svg>
+  <a class="skip" href="#main">Skip to content</a>
+  <header>
+    <nav class="wrap nav" aria-label="Main navigation">
+      <a class="logo" href="#home" aria-label="BUILDFIT home"><span class="logo-mark" aria-hidden="true"></span>BUILDFIT<span style="color:var(--accent)">.</span></a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="navigation">Menu <span aria-hidden="true">☰</span></button>
+      <div class="nav-links" id="navigation"><a class="active" href="#home">Home</a><a href="#shop">Shop</a><a href="#about">About</a><a href="#teams">For Teams</a><a href="#contact">Contact</a></div>
+      <a class="header-cart" href="cart.html" aria-label="Cart, 0 items"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 3h3l3 12h11l3-9H6"/><circle cx="9" cy="20" r="1"/><circle cx="19" cy="20" r="1"/></svg>Cart <span data-cart-count>0</span></a>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">Workwear with purpose</div>
+          <h1 id="hero-title">BUILT FOR<br>REAL <span>WORK.</span></h1>
+          <p class="subtitle">Durable. Comfortable. Professional.</p>
+          <p class="hero-description">For early starts. Long shifts. And a job done right.<br>Workwear that works as hard as you do.</p>
+          <div class="actions"><a class="button" href="#shop">Shop Now <span aria-hidden="true">↗</span></a><a class="button secondary" href="#shop">Explore Collection <span aria-hidden="true">→</span></a></div>
+          <div class="hero-footnote"><span aria-hidden="true">✦</span> MADE FOR THE PEOPLE WHO BUILD.</div>
+        </div>
+        <div class="hero-art">
+          <span class="edition">THE EVERYDAY ESSENTIALS</span>
+          <svg role="img" aria-label="Illustration of a BUILDFIT tan work jacket with reinforced dark panels" viewBox="0 0 400 440"><use href="#jacket"/></svg>
+          <span class="art-caption">PURPOSE IN EVERY DETAIL</span>
+          <div class="product-label"><strong>READY FOR THE WORKDAY.</strong>UTILITY. WITHOUT COMPROMISE.</div>
+        </div>
+      </div>
+    </section>
+    <div class="benefits"><div class="wrap benefits-inner">
+      <div class="benefit"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 8 3v6c0 5-8 10-8 10S4 16 4 11V5Z"/><path d="m8 11 3 3 5-6"/></svg>BUILT TO LAST</div>
+      <div class="benefit"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8V4h4m8 0h4v4m0 8v4h-4m-8 0H4v-4M8 12h8m-4-4v8"/></svg>COMFORT IN EVERY MOVE</div>
+      <div class="benefit"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 3-5 4 3 5 2-1v10h8V11l2 1 3-5-5-4c0 4-8 4-8 0Z"/></svg>PROFESSIONAL BY DESIGN</div>
+    </div></div>
+    <section class="wrap categories" id="shop" aria-labelledby="category-heading">
+      <div class="section-heading"><div><div class="eyebrow">Gear up for the everyday</div><h2 id="category-heading">Shop by Category</h2></div><a class="text-link" href="#category-grid">Explore the range <span aria-hidden="true">↗</span></a></div>
+      <div class="category-grid" id="category-grid">
+        <a class="category" href="jackets.html" aria-label="Shop Jackets"><div class="category-image"><span class="category-number">01 /</span><svg aria-hidden="true" viewBox="0 0 400 440"><use href="#jacket"/></svg></div><div class="category-title">Jackets <span aria-hidden="true">↗</span></div><small>Your outer layer. Upgraded.</small></a>
+        <a class="category" href="#contact" aria-label="Enquire about Trousers"><div class="category-image"><span class="category-number">02 /</span><svg aria-hidden="true" viewBox="0 0 240 300"><use href="#trousers"/></svg></div><div class="category-title">Trousers <span aria-hidden="true">↗</span></div><small>Made to move with you.</small></a>
+        <a class="category" href="#contact" aria-label="Enquire about Hi-Vis"><div class="category-image"><span class="category-number">03 /</span><svg aria-hidden="true" viewBox="0 0 240 300"><use href="#vest"/></svg></div><div class="category-title">Hi-Vis <span aria-hidden="true">↗</span></div><small>Stand out on site.</small></a>
+        <a class="category" href="#contact" aria-label="Enquire about Footwear"><div class="category-image"><span class="category-number">04 /</span><svg aria-hidden="true" viewBox="0 0 260 240"><use href="#boot"/></svg></div><div class="category-title">Footwear <span aria-hidden="true">↗</span></div><small>A solid foundation.</small></a>
+        <a class="category" href="#contact" aria-label="Enquire about Accessories"><div class="category-image"><span class="category-number">05 /</span><svg aria-hidden="true" viewBox="0 0 260 250"><use href="#accessories"/></svg></div><div class="category-title">Accessories <span aria-hidden="true">↗</span></div><small>The details that do more.</small></a>
+      </div>
+    </section>
+    <section class="mission" id="about" aria-labelledby="mission-heading"><div class="wrap mission-grid">
+      <div><div class="eyebrow">Our Mission</div><h2 id="mission-heading">Clothes That Build <span>Confidence.</span></h2><p>You take pride in your work. We believe your workwear should reflect that. We’re here to bring considered design, everyday comfort and a professional edge to the construction industry.</p><a class="text-link" href="#teams">Built for you. And your crew. <span aria-hidden="true">↗</span></a></div>
+      <div class="mission-graphic"><strong>HARD WORK.<br>HIGH STANDARDS.<br><span>NO SHORTCUTS.</span></strong><small>THE BUILDFIT MINDSET — ON AND OFF SITE.</small></div>
+    </div></section>
+    <section class="wrap team-strip" id="teams" aria-labelledby="teams-heading"><div><h2 id="teams-heading">One crew. One standard.</h2><p>A professional look for every member of your team.</p></div><a class="button" href="#contact">Outfit Your Team <span aria-hidden="true">↗</span></a></section>
+  </main>
+  <footer id="contact"><div class="wrap footer-inner"><a class="logo" href="#home"><span class="logo-mark" aria-hidden="true"></span>BUILDFIT.</a><p>© 2026 BUILDFIT. Built for real work.</p><span class="footer-contact">Collection & team enquiries — coming soon</span></div></footer>
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const navigation = document.querySelector('#navigation');
+    function closeMenu() { toggle.setAttribute('aria-expanded', 'false'); navigation.classList.remove('open'); }
+    toggle.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!expanded));
+      navigation.classList.toggle('open', !expanded);
+    });
+    navigation.addEventListener('click', event => { if (event.target.closest('a')) closeMenu(); });
+    document.addEventListener('keydown', event => { if (event.key === 'Escape' && navigation.classList.contains('open')) { closeMenu(); toggle.focus(); } });
+    window.matchMedia('(min-width: 701px)').addEventListener('change', event => { if (event.matches) closeMenu(); });
+  </script>
+<script src="cart.js"></script></body>
+</html>
